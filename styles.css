@@ -1,0 +1,172 @@
+
+/* Website lendingpage */
+body {
+  background-color: #060918;
+  color: #e4e4e4;
+  size: 12px;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-style:normal;
+  line-height: 16px;
+  font-size: medium;
+  padding: 1px;
+}
+
+/* ------------------------------------# */
+
+/* frontpage navigation */
+
+.header_main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-style:normal;
+  font-size:18px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+#menu_button {
+  color: #ffffff;
+}
+
+#left_header {
+  margin: top 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#right_header {
+  margin: top 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+#hello_button {
+  border-style:groove;
+  border-color: #ffffff;
+  font-size: 12px;
+  border-radius: 15%;
+  padding: 8px 8px 8px 8px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ------------------------------------# */
+
+/*
+frontpage banner */
+
+.banner{
+  padding: 50px 0;
+  height: 150px;
+  display: flex;
+  justify-content:center;
+}
+#banner_title_name {
+  color: #919bba;
+  text-align: left;
+  font-size: 80px;
+}
+
+#banner_detial_text{
+  color: #1F9DE0;
+  text-align: right;
+}
+
+/* ------------------------------------# */
+
+/* frontpage body design */
+.body_design {
+  margin-bottom: 10%;
+  margin-top: 5%;
+  justify-content:center;
+  display: flex;
+  border-style:dotted;
+  border-color:#919bba51;
+  width: 80%;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2px;
+}
+#body_paragraph{
+  color: #e2e2e5;
+  font-family: "Acumin Pro Regular " sans-serif;
+}
+
+#body_column_left {
+  text-align: left;
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+#body_column_right {
+  padding: 0 32px;
+  text-align: justify;
+  flex: 2;
+  margin-left: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .header_main_container {
+    display: none;
+
+    ;
+  }
+  .banner{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #banner_title_name {
+    color: #919bba;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  #banner_detial_text{
+    color: #1F9DE0;
+    text-align:center;
+  }
+  .body_design {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #body_column_right {
+    text-align: left;
+    margin-left: -20px;
+  }
+}
