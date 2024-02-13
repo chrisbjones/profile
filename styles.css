@@ -115,7 +115,7 @@ frontpage banner */
   font-family: "Acumin Pro Regular " sans-serif;
 }
 
-#body_column_left {
+#body_main_image {
   text-align: left;
   flex: 1;
   margin-right: 20px;
@@ -127,6 +127,7 @@ frontpage banner */
   text-align: justify;
   flex: 2;
   margin-left: 20px;
+  line-height: 1.5;
 }
 
 ul {
@@ -141,9 +142,11 @@ li {
 }
 
 @media screen and (max-width: 520px) {
+  body {
+    align-items: center;
+  }
   .header_main_container {
     display: none;
-
     ;
   }
   .banner{
@@ -155,6 +158,7 @@ li {
     color: #919bba;
     text-align: center;
     font-size: 50px;
+    line-height: 0.8;
   }
 
   #banner_detial_text{
@@ -163,10 +167,22 @@ li {
   }
   .body_design {
     flex-direction: column;
-    padding: 20px;
+    width:80%;
+
   }
   #body_column_right {
     text-align: left;
     margin-left: -20px;
+    width: 90%;
+    text-align:left;
+    padding-right: 10px;
+    line-height: 1.5;
+
   }
+
+#body_main_image {
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+}
 }
